@@ -2,12 +2,10 @@ import Link from "next/link";
 import styles from "../../styles/home.module.css"
 import List from "../../components/list";
 
-export const API_URL = "https://books-api.nomadcoders.workers.dev/lists";
-
 async function getList() {
   console.log("im fetching!");
   // await new Promise((resolve) => setTimeout(resolve, 1000));
-  const response = await fetch(API_URL);
+  const response = await fetch("https://books-api.nomadcoders.workers.dev/lists");
   const json = await response.json();
   // console.log(json);
   return json;
