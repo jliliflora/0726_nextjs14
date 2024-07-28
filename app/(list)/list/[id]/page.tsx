@@ -18,7 +18,7 @@ export default async function listInside({
     const listInside = await getListInside(id);
     return (
         <div className={styles.container}>
-            {listInside?.results.books.map((book) => (
+            {listInside?.results?.books.map((book) => (
                 <div className={styles.book} key={book.rank}>
                     <div className={styles.bookCover}>
                         <img src={book.book_image} />
