@@ -1,6 +1,13 @@
 .container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0 auto;
     width: 720px;
-  }
+}
+.container h1 {
+  font-size: 40px;
+}
+.container p {
+  font-size: 17px;
+  margin-top: 20px;
+}
   

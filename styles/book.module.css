@@ -1,0 +1,56 @@
+.container {
+    width: 90%;
+    padding: 0px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 30px;
+    /* border: 1px solid red; */
+    margin-top: 3vh;
+}
+
+.book {
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 10px;
+    width: 20%;
+}
+.bookCover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bookCover img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.bookInfo {
+    /* border: 1px solid orange; */
+    padding: 0.9vw 0.9vw 4vw 0.9vw;
+    position: relative;
+}
+.bookInfo h4 {
+    font-size: 1.35vw;
+    font-weight: 500;
+    margin-bottom: 0.5vw;
+}
+.bookInfo .author {
+    font-size: 1vw;
+    color: grey;
+}
+.bookInfo .bookBuy {
+    font-size: 1vw;
+    border: 1px solid rgb(70, 70, 70);
+    position: absolute;
+    bottom: 1vw;
+    padding: 0.5vw;
+    border-radius: 10px;
+}
+.bookInfo .bookBuy:hover {
+    color: white;
+    background: black;
+    cursor: pointer;
+}

@@ -1,0 +1,13 @@
+.list {
+    float: left;
+    border: 1px solid black;
+    margin: 7px;
+    padding: 10px;
+    border-radius: 50px;
+  }
+  
+.list:hover {
+    color: white;
+    background: black;
+    cursor: pointer;
+  }
