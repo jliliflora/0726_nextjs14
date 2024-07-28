@@ -16,10 +16,12 @@ export default function List({ id, list_name }:IListProps) {
     };
 
     return (
-        <li onClick={onClick} className={styles.list}>
+        
             <Link href={`/list/${id}`}>
-                {list_name} ➡️
+                <li onClick={onClick} className={styles.list}>
+                    {list_name} ➡️
+                </li>
             </Link>
-        </li>
+        
     )
 }
