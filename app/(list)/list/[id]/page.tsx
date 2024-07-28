@@ -6,7 +6,7 @@ async function getListInside(id: string) {
     // const response = await fetch("https://books-api.nomadcoders.workers.dev/list?name=hardcover-fiction");
     const response = await fetch(`https://books-api.nomadcoders.workers.dev/list?name=${id}`);
     const json = await response.json();
-    console.log(json);
+    // console.log(json);
     return json;
 }
 
