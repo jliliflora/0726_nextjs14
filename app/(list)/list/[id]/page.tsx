@@ -6,6 +6,7 @@ async function getListInside(id: string) {
     // const response = await fetch("https://books-api.nomadcoders.workers.dev/list?name=hardcover-fiction");
     const response = await fetch(`https://books-api.nomadcoders.workers.dev/list?name=${id}`);
     const json = await response.json();
+    console.log(json);
     return json;
 }
 
@@ -17,7 +18,7 @@ export default async function listInside({
     const listInside = await getListInside(id);
     return (
         <div className={styles.container}>
-            {listInside.results.books.map((book) => (
+            {listInside?.results.books.map((book) => (
                 <div className={styles.book} key={book.rank}>
                     <div className={styles.bookCover}>
                         <img src={book.book_image} />
