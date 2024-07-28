@@ -17,7 +17,7 @@ export default function List({ id, list_name }:IListProps) {
 
     return (
         <li onClick={onClick} className={styles.list}>
-            <Link prefetch href={`/list/${id}`}>
+            <Link href={`/list/${id}`}>
                 {list_name} ➡️
             </Link>
         </li>
