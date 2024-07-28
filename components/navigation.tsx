@@ -7,10 +7,10 @@ export default function Navigation() {
         <nav className={styles.nav}>
             <ul>
                 <li>
-                    <Link href="/">Home</Link>
+                    <Link prefetch href="/">Home</Link>
                 </li>
                 <li>
-                    <Link href="/about">About</Link>
+                    <Link prefetch href="/about">About</Link>
                 </li>
             </ul>
         </nav>
